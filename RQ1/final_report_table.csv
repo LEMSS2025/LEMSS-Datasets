@@ -1,0 +1,4 @@
+experiment,Best Agent,Winning Homogeneity,average_and_diameter_of_player_documents_mean,average_and_diameter_of_player_documents_min,average_of_player_documents_consecutive_rounds_mean,rank_diameter_and_average_last_round_mean,rank_diameter_and_average_last_round_min
+Llama-E5-Listwise-4-players,editor,1.3955555,0.9581482,0.886296,0.98074543,0.99170506,0.9862268
+Llama-E5-Pairwise-4-players,teacher,1.4,0.95527947,0.88604176,0.97366446,0.98801225,0.9801541
+Mordo et al. [34],student,2.6285715,0.89381695,0.8246675,0.9399611,0.8695793,0.78546023
