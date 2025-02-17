@@ -1,23 +1,24 @@
-Ranker	LLM	Agent Depth	Agent Pairwise	Num Agents	Agents Prompt	Conf ID
-intfloat/e5-large-unsupervised	mlx-community/Ministral-8B-Instruct-2410-bf16	2	False	5	[564]	42fc31f2d711c0a0810208d047a8912c_2024-11-29
-okapi	mlx-community/Meta-Llama-3.1-8B-Instruct-4bit	2	False	5	[564]	ff9bb75b3df4b36b3c22b232ad7fe515_2024-11-09
-okapi	mlx-community/Meta-Llama-3.1-8B-Instruct-4bit	3	True	5	[564]	474f163f3b0c1c2ccf96a338e610449f_2024-11-10
-okapi	mlx-community/gemma-2-9b-it-4bit	3	True	5	[564]	8b5ae3deba7359cf3cf7764fa3afe92c_2024-11-24
-facebook/contriever	google/gemma-2-9b-it	3	True	5	[564]	9db68e8580d81d4be79f04eac8788d3a_2024-11-07
-intfloat/e5-large-unsupervised	google/gemma-2-9b-it	2	False	5	[564]	a6514a317834b0b96f7f5e536ff2fd25_2024-11-07
-okapi	mlx-community/gemma-2-9b-it-4bit	2	False	5	[564]	0a6cb83f6b7eaad2d3c85bd66ddb4dd0_2024-11-24
-intfloat/e5-large-unsupervised	mlx-community/gemma-2-9b-it-4bit	3	True	5	[834]	ed2323d4147954b6605b4c0d7bf50c85_2024-11-26
-facebook/contriever	mlx-community/Meta-Llama-3.1-8B-Instruct-4bit	2	False	5	[834]	b9df48fe4a149bc4dd966fb78d03a2e0_2024-11-26
-facebook/contriever	meta-llama/Meta-Llama-3.1-8B-Instruct	3	True	5	[564]	9aeab71ca96d759dabfebbe9f8036eed_2024-11-07
-facebook/contriever	meta-llama/Meta-Llama-3.1-8B-Instruct	2	False	5	[564]	650e40cfe9ac9a57d3976b879f9a9f6c_2024-11-09
-intfloat/e5-large-unsupervised	meta-llama/Meta-Llama-3.1-8B-Instruct	3	True	5	[564]	fb7f80f9e55336fbdd08aed1465875ec_2024-11-09
-intfloat/e5-large-unsupervised	google/gemma-2-9b-it	3	True	5	[564]	d058979aefd1cca3361ddca0fc1fff43_2024-11-09
-facebook/contriever	google/gemma-2-9b-it	2	False	5	[564]	e02603f697ce92b1d96b90c087dfa9cf_2024-11-13
-intfloat/e5-large-unsupervised	meta-llama/Meta-Llama-3.1-8B-Instruct	2	False	5	[564]	78ec5035a4eaa7596581a158a65396f1_2024-11-07
-intfloat/e5-large-unsupervised	mlx-community/Ministral-8B-Instruct-2410-bf16	3	True	5	[564]	7e11d22b4d71bc4f57920b42845a1de0_2024-11-30
-intfloat/e5-large-unsupervised	meta-llama/Meta-Llama-3.1-8B-Instruct	2	False	4	[564]	102ae58c58c6efa71518057aefc412e0_2024-11-29
-intfloat/e5-large-unsupervised	meta-llama/Meta-Llama-3.1-8B-Instruct	3	True	4	[564]	8c1b30908533c128445d2cdbbca4d6e9_2024-11-29
-intfloat/e5-large-unsupervised	Qwen/Qwen2.5-7B-Instruct	2	False	5	[564]	15bc66aace3c9656f1b27714df81d306_2024-11-28
-intfloat/e5-large-unsupervised	Qwen/Qwen2.5-7B-Instruct	3	True	5	[564]	1cb93dc5c6f61ea96a655b195dcaa3fd_2024-11-28
-intfloat/e5-large-unsupervised	mlx-community/Meta-Llama-3.1-8B-Instruct-4bit	3	True	5	[834]	8af209565a3c998b848d3609c684b833_2024-12-04
-intfloat/e5-large-unsupervised	mlx-community/Meta-Llama-3.1-8B-Instruct-4bit	2	False	5	[834]	5e2587bfad51339c606e96652bccaf4d_2024-12-05
+| Name                                | Ranker                        | LLM                                        | Agent Depth | Agent Pairwise | Num Agents | Agents Prompt |
+|-------------------------------------|-------------------------------|--------------------------------------------|-------------|-----------------|------------|----------------|
+| Gemma-Contriever-listwise           | facebook/contriever            | google/gemma-2-9b-it                      | 2           | listwise        | 5          | normal         |
+| Gemma-Contriever-pairwise           | facebook/contriever            | google/gemma-2-9b-it                      | 3           | pairwise        | 5          | normal         |
+| Llama-Contriever-listwise           | facebook/contriever            | meta-llama/Meta-Llama-3.1-8B-Instruct     | 2           | listwise        | 5          | normal         |
+| Llama-Contriever-pairwise           | facebook/contriever            | meta-llama/Meta-Llama-3.1-8B-Instruct     | 3           | pairwise        | 5          | normal         |
+| Llama-Contriever-listwise-no-copy   | facebook/contriever            | mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 2           | listwise        | 5          | no-copy        |
+| Qwen-E5-listwise                   | intfloat/e5-large-unsupervised | Qwen/Qwen2.5-7B-Instruct                  | 2           | listwise        | 5          | normal         |
+| Qwen-E5-pairwise                   | intfloat/e5-large-unsupervised | Qwen/Qwen2.5-7B-Instruct                  | 3           | pairwise        | 5          | normal         |
+| Gemma-E5-listwise                  | intfloat/e5-large-unsupervised | google/gemma-2-9b-it                      | 2           | listwise        | 5          | normal         |
+| Gemma-E5-pairwise                  | intfloat/e5-large-unsupervised | google/gemma-2-9b-it                      | 3           | pairwise        | 5          | normal         |
+| Llama-E5-listwise-4-players        | intfloat/e5-large-unsupervised | meta-llama/Meta-Llama-3.1-8B-Instruct     | 2           | listwise        | 4          | normal         |
+| Llama-E5-listwise                  | intfloat/e5-large-unsupervised | meta-llama/Meta-Llama-3.1-8B-Instruct     | 2           | listwise        | 5          | normal         |
+| Llama-E5-pairwise-4-players        | intfloat/e5-large-unsupervised | meta-llama/Meta-Llama-3.1-8B-Instruct     | 3           | pairwise        | 4          | normal         |
+| Llama-E5-pairwise                  | intfloat/e5-large-unsupervised | meta-llama/Meta-Llama-3.1-8B-Instruct     | 3           | pairwise        | 5          | normal         |
+| Llama-E5-listwise-no-copy          | intfloat/e5-large-unsupervised | mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 2           | listwise        | 5          | no-copy        |
+| Llama-E5-pairwise-no-copy          | intfloat/e5-large-unsupervised | mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 3           | pairwise        | 5          | no-copy        |
+| Ministral-E5-listwise              | intfloat/e5-large-unsupervised | mlx-community/Ministral-8B-Instruct-2410-bf16 | 2           | listwise        | 5          | normal         |
+| Ministral-E5-pairwise              | intfloat/e5-large-unsupervised | mlx-community/Ministral-8B-Instruct-2410-bf16 | 3           | pairwise        | 5          | normal         |
+| Gemma-E5-pairwise-no-copy          | intfloat/e5-large-unsupervised | mlx-community/gemma-2-9b-it-4bit          | 3           | pairwise        | 5          | no-copy        |
+| Llama-Okapi-listwise               | okapi                          | mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 2           | listwise        | 5          | normal         |
+| Llama-Okapi-pairwise               | okapi                          | mlx-community/Meta-Llama-3.1-8B-Instruct-4bit | 3           | pairwise        | 5          | normal         |
+| Gemma-Okapi-listwise               | okapi                          | mlx-community/gemma-2-9b-it-4bit          | 2           | listwise        | 5          | normal         |
+| Gemma-Okapi-pairwise               | okapi                          | mlx-community/gemma-2-9b-it-4bit          | 3           | pairwise        | 5          | normal         |
