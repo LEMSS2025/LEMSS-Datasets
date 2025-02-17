@@ -1,0 +1,5 @@
+experiment,Best Agent,Winning Homogeneity,average_and_diameter_of_player_documents_mean,average_and_diameter_of_player_documents_min,average_of_player_documents_consecutive_rounds_mean,rank_diameter_and_average_last_round_mean,rank_diameter_and_average_last_round_min
+Llama-E5-Listwise,student,1.5611111,0.95779544,0.89004636,0.9774122,0.9922358,0.98579514
+Llama-E5-Pairwise,student,1.3944445,0.94948655,0.87305343,0.97121835,0.98371637,0.9703673
+Llama-E5-Listwise-no-copy,editor,1.45,0.94948524,0.8604876,0.9723514,0.9903997,0.98016834
+Gemma-E5-Listwise,student,1.5722222,0.9735336,0.91825736,0.98760426,0.9957582,0.9922037
