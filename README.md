@@ -1,4 +1,4 @@
-| Name                                | Ranker                        | LLM                                        | Agent Depth | Agent Pairwise | Num Agents | Agents Prompt |
+| Name                                | Ranker                        | LLM                                        | rankings history |Agent type | Num of players | Agents Prompt |
 |-------------------------------------|-------------------------------|--------------------------------------------|-------------|-----------------|------------|----------------|
 | Gemma-Contriever-listwise           | facebook/contriever            | google/gemma-2-9b-it                      | 2           | listwise        | 5          | normal         |
 | Gemma-Contriever-pairwise           | facebook/contriever            | google/gemma-2-9b-it                      | 3           | pairwise        | 5          | normal         |
