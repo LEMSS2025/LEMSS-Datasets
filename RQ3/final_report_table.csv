@@ -1,0 +1,7 @@
+experiment,Best Agent,Winning Homogeneity,average_and_diameter_of_player_documents_mean,average_and_diameter_of_player_documents_min,average_of_player_documents_consecutive_rounds_mean,rank_diameter_and_average_last_round_mean,rank_diameter_and_average_last_round_min
+Llama-E5-Listwise,student,1.5611111,0.95779544,0.89004636,0.9774122,0.9922358,0.98579514
+Llama-E5-Pairwise,student,1.3944445,0.94948655,0.87305343,0.97121835,0.98371637,0.9703673
+Llama-Contriever-Listwise,teacher,1.4777777,0.9620408,0.89264965,0.9794426,0.99156415,0.98525035
+Llama-Contriever-Pairwise,professor,1.4333333,0.9487639,0.87376344,0.97033674,0.9856269,0.9721157
+Llama-Okapi-Listwise,writer,1.4944445,0.95123774,0.8600163,0.9814354,0.9926529,0.98517394
+Llama-Okapi-Pairwise,professor,1.5055555,0.9448972,0.8538176,0.97052354,0.98576826,0.9731217
